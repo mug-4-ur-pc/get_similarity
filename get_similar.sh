@@ -63,7 +63,7 @@ function EchoSameFiles() {
     for key in "${!diffs_ref[@]}"; do
 	local same=${diffs_ref[$key]}
 	if [[ $same != 100 && $same -ge $2 ]]; then
-	    echo $key $same
+	    echo $key $same%
 	fi
     done
 }
